@@ -6,6 +6,7 @@ function Home(props) {
       Home
       <div className="home">css test</div>
       <div className="redText">variables test</div>
+      <div className="btn btn-danger">bootstrap test</div>
     </div>
   );
 }
