@@ -1,0 +1,9 @@
+@import '../scss/variables.scss';
+
+.home {
+  background-color: green;
+}
+
+.redText {
+  color: $test-variable;
+}
