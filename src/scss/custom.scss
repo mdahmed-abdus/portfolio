@@ -1,12 +1,42 @@
 @import '../scss/variables.scss';
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-primary;
+  background-color: $primary-black;
+  color: $primary-white;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  padding-top: 5rem; //80px
+  padding-bottom: 5rem; //80px
+}
+
+img {
+  max-width: 100%;
+}
+
 .home {
   background-color: green;
 }
 
-.redText {
-  color: $test-variable;
-}
+// .redText {
+//   color: $test-variable;
+// }
 
 .grid-main-container {
   margin-left: auto;
