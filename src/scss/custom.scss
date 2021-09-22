@@ -53,6 +53,22 @@ img {
   text-transform: uppercase;
   color: $primary;
 }
+.primaryButtonStyle {
+  @extend .title-secondary;
+  font-weight: normal;
+  font-size: 12px;
+  border: 1px solid #fbd784;
+  box-sizing: border-box;
+  border-radius: 50px;
+  -webkit-appearance: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $primary;
+    color: $primary-black;
+  }
+}
 
 .desc {
   font-family: $font-primary;

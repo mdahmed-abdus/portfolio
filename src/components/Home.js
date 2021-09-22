@@ -3,6 +3,7 @@ import Title from './Title';
 import Desc from './Desc';
 import TitleSecondary from './TitleSecondary';
 import Card from './Card/Card';
+import Button from './Button/Button';
 
 function Home(props) {
   let introTitle = 'Hi, I am a Software Engineer';
@@ -18,7 +19,7 @@ function Home(props) {
         <section class="grid-container ">
           <div class="row ">
             <div class="col-12 col-md-6 ">
-              <TitleSecondary secondaryTitle="about me" />
+              <TitleSecondary showRightLine="false" secondaryTitle="about me" />
               <div class="pt60">
                 <Desc desc={aboutMeDesc} />
               </div>
@@ -52,6 +53,8 @@ function Home(props) {
           </section>
         </section>
       </section>
+
+      <Button />
     </div>
   );
 }
