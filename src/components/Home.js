@@ -9,6 +9,14 @@ function Home(props) {
   let introTitle = 'Hi, I am a Software Engineer';
   let aboutMeDesc =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
+  const cardList = [
+    { cardTitle: 'python' },
+    { cardTitle: 'java' },
+    { cardTitle: 'nodejs' },
+    { cardTitle: 'python' },
+    { cardTitle: 'java' },
+    { cardTitle: 'nodejs' },
+  ];
 
   return (
     <div>
@@ -46,13 +54,13 @@ function Home(props) {
                 <div class="flexCenter">
                   <TitleSecondary secondaryTitle="my skills" />
                 </div>
-
-                <div class="pt60">
-                  <div class="col-12 col-md-4">
-                    <Card />
-                  </div>
-                </div>
               </div>
+
+              {cardList.map((card, i) => (
+                <div class="col-12 col-md-4 pt60">
+                  <Card key={i} cardTitle={card.cardTitle} />
+                </div>
+              ))}
             </div>
           </section>
         </section>
