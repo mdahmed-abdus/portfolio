@@ -23,6 +23,10 @@ function Home(props) {
               <div class="pt60">
                 <Desc desc={aboutMeDesc} />
               </div>
+
+              <div class="flexCenter pt60">
+                <Button />
+              </div>
             </div>
             <div class="col-12 col-md-6 ">
               <div class="pt90">
@@ -53,8 +57,6 @@ function Home(props) {
           </section>
         </section>
       </section>
-
-      <Button />
     </div>
   );
 }
