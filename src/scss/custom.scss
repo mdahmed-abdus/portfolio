@@ -29,15 +29,71 @@ body {
 img {
   max-width: 100%;
 }
-
+.darkBg {
+  background-color: $secondary-black;
+}
 .home {
   background-color: green;
 }
 
-// .redText {
-//   color: $test-variable;
-// }
+.mainTitle {
+  font-family: $font-secondary;
+  font-weight: normal;
+  font-size: $font-36;
+  line-height: 32px;
+  text-align: center;
+}
 
+.title-secondary {
+  font-family: $font-primary;
+  font-weight: $weight-bold;
+  font-size: $font-18;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.desc {
+  font-family: $font-primary;
+  font-size: $font-18;
+  line-height: 34px;
+}
+
+.line {
+  margin: auto 0;
+  background-color: $primary;
+  width: 68px;
+  height: 2px;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.pt60 {
+  padding-top: 60px;
+}
+.pt90 {
+  padding-top: 90px;
+}
+.pt80 {
+  padding-top: 80px;
+}
+.mt80 {
+  margin-top: 80px;
+}
 .grid-main-container {
   margin-left: auto;
   margin-right: auto;
