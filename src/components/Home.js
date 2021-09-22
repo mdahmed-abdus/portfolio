@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import Desc from './Desc';
 import TitleSecondary from './TitleSecondary';
+import Card from './Card/Card';
 
 function Home(props) {
   let introTitle = 'Hi, I am a Software Engineer';
@@ -41,7 +42,11 @@ function Home(props) {
                   <TitleSecondary secondaryTitle="my skills" />
                 </div>
 
-                <div class="pt60"></div>
+                <div class="pt60">
+                  <div class="col-12 col-md-4">
+                    <Card />
+                  </div>
+                </div>
               </div>
             </div>
           </section>
