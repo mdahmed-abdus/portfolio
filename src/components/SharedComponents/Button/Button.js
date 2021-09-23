@@ -1,8 +1,8 @@
 import React from 'react';
-import './Button.scss';
+import '../Button/Button.scss';
 
-let buttonText = 'work with me';
 function Button(props) {
+  let buttonText = 'work with me';
   return <span className="primaryButtonStyle">{buttonText}</span>;
 }
 

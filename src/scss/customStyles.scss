@@ -1,0 +1,32 @@
+@import '../scss/variables.scss';
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-primary;
+  background-color: $primary-black;
+  color: $primary-white;
+  padding-top: 5rem; //80px
+  padding-bottom: 5rem; //80px
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.darkBg {
+  background-color: $secondary-black;
+}

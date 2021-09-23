@@ -1,0 +1,65 @@
+// Flex behaviour
+.displayFlex {
+  display: flex;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexVerticleCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Margins and padding
+.ml20 {
+  margin-left: 20px !important;
+}
+.mr20 {
+  margin-right: 20px !important;
+}
+.mt80 {
+  margin-top: 80px;
+}
+.pt60 {
+  padding-top: 60px;
+}
+.pb60 {
+  padding-bottom: 60px;
+}
+.pt90 {
+  padding-top: 90px;
+}
+.pt80 {
+  padding-top: 80px;
+}
+
+//Grid containers
+.grid-main-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1360px;
+  width: 1360px;
+}
+
+.grid-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .grid-main-container {
+    max-width: 1080px;
+    width: 1080px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-main-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}

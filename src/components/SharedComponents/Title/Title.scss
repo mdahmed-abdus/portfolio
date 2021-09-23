@@ -1,0 +1,26 @@
+@import '../../../scss/variables.scss';
+
+.mainTitle {
+  font-family: $font-secondary;
+  font-weight: normal;
+  font-size: $font-36;
+  line-height: 32px;
+  text-align: center;
+}
+
+.title-secondary {
+  font-family: $font-primary;
+  font-weight: $weight-bold;
+  font-size: $font-18;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.line {
+  margin: auto 0;
+  background-color: $primary;
+  width: 68px;
+  height: 2px;
+}

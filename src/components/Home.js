@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from './Title';
-import Desc from './Desc';
-import TitleSecondary from './TitleSecondary';
-import Card from './Card/Card';
-import Button from './Button/Button';
+import Title from './SharedComponents/Title/Title';
+import Desc from './SharedComponents/Desc/Desc';
+import TitleSecondary from './SharedComponents/Title/TitleSecondary';
+import Card from './SharedComponents/Card/Card';
+import Button from './SharedComponents/Button/Button';
 
 function Home(props) {
   let introTitle = 'Hi, I am a Software Engineer';
