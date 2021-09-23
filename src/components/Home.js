@@ -45,18 +45,19 @@ function Home(props) {
 
             <div className="col-12 col-md-6 ">
               <TitleSecondary isLeftLine="true" secondaryTitle="about me" />
-              <div className="pt60">
-                <Desc desc={aboutMeDesc} />
-              </div>
+              <Desc externalClass={'pt60'} desc={aboutMeDesc} />
             </div>
             <div className="col-12 col-md-6 ">
-              <div className="pt90">
-                <Title styleObj={styles.centerAlign} title={introTitle} />
-              </div>
+              <Title
+                externalClass={'pt90'}
+                styleObj={styles.centerAlign}
+                title={introTitle}
+              />
             </div>
           </div>
         </section>
       </section>
+
       {/* skills-section */}
       <section className="darkBg mt80 pt80 pb80">
         <section className="grid-main-container">
@@ -81,6 +82,7 @@ function Home(props) {
           </section>
         </section>
       </section>
+
       {/* my work section */}
       <section className="grid-main-container pt80">
         <section className="grid-container ">
@@ -124,10 +126,14 @@ function Home(props) {
               />
             </div>
             <div className="col-12 col-md-4 pt60">
-              <img alt="hehebot" src={laptopDark} />
+              <div className="img-wrap-main">
+                <img className="warp-img" alt="laptopDark" src={laptopDark} />
+              </div>
             </div>
             <div className="col-12 col-md-5 pt60">
-              <img alt="hehebot" src={laptopLight} />
+              <div className="img-wrap-main">
+                <img className="warp-img" alt="laptopLight" src={laptopLight} />
+              </div>
               <TitleSecondary
                 externalClass={'pt20'}
                 isRegular="true"

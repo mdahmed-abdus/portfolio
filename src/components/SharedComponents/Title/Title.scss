@@ -32,3 +32,12 @@
   width: 68px;
   height: 2px;
 }
+
+@media only screen and (max-width: 480px) {
+  .mainTitle {
+    font-size: 26px;
+  }
+  .title-secondary {
+    font-size: $font-16;
+  }
+}
