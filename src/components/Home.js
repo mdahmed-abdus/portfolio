@@ -21,10 +21,20 @@ function Home(props) {
     { cardTitle: 'java' },
     { cardTitle: 'nodejs' },
   ];
+  let styles = {
+    centerAlign: {
+      textAlign: 'center',
+    },
+    rightAlign: {
+      textAlign: 'right',
+    },
+  };
 
   return (
     <div>
       {/* banner */}
+      {/* {console.log(STYLES)} */}
+
       {/* intro-section */}
       <section className="grid-main-container ">
         <section className="grid-container ">
@@ -41,14 +51,14 @@ function Home(props) {
             </div>
             <div className="col-12 col-md-6 ">
               <div className="pt90">
-                <Title title={introTitle} />
+                <Title styleObj={styles.centerAlign} title={introTitle} />
               </div>
             </div>
           </div>
         </section>
       </section>
       {/* skills-section */}
-      <section className="darkBg mt80 pt80">
+      <section className="darkBg mt80 pt80 pb80">
         <section className="grid-main-container">
           <section className="grid-container ">
             <div className="row">
@@ -71,47 +81,64 @@ function Home(props) {
           </section>
         </section>
       </section>
-
       {/* my work section */}
-      <section className="darkBg mt80 pt80">
-        <section className="grid-main-container">
-          <section className="grid-container ">
-            <div className="row">
-              <div className="col-12">
-                <div className="flexCenter">
-                  <TitleSecondary
-                    isRightLine="true"
-                    isLeftLine="true"
-                    secondaryTitle="my work"
-                  />
-                </div>
-              </div>
-
-              <div className="col-12 col-md-7 pt60">
-                <img alt="hehebot" src={hehebot} />
-              </div>
-              <div className="col-12 col-md-5 pt60">
-                <Title title={'HeheBot'} />
-                <TitleSecondary secondaryTitle="my work" />
-                <Desc desc={aboutMeDesc} />
-              </div>
-
-              <div className="col-12 col-md-3 pt60">
-                <Title title={'HeheBot'} />
-                <Desc desc={aboutMeDesc} />
-              </div>
-              <div className="col-12 col-md-4 pt60">
-                <img alt="hehebot" src={laptopDark} />
-              </div>
-              <div className="col-12 col-md-5 pt60">
-                <img alt="hehebot" src={laptopLight} />
-              </div>
-
-              <div className="flexCenter pt60">
-                <Button />
+      <section className="grid-main-container pt80">
+        <section className="grid-container ">
+          <div className="row">
+            <div className="col-12">
+              <div className="flexCenter">
+                <TitleSecondary
+                  isRightLine="true"
+                  isLeftLine="true"
+                  secondaryTitle="my work"
+                />
               </div>
             </div>
-          </section>
+
+            <div className="col-12 col-md-7 pt60">
+              <div className="img-wrap-main">
+                <img className="warp-img" alt="hehebot" src={hehebot} />
+              </div>
+            </div>
+            <div className="col-12 col-md-5 pt60">
+              <Title isItallic="true" title={'HeheBot'} />
+
+              <TitleSecondary
+                isRegular="true"
+                externalClass={'pt20'}
+                secondaryTitle="A personalized discord bot"
+              />
+              <Desc externalClass={'pt40'} desc={aboutMeDesc} />
+            </div>
+
+            <div className="col-12 col-md-3 pt60">
+              <Title
+                styleObj={styles.rightAlign}
+                isItallic="true"
+                title={'Simple Auth'}
+              />
+              <Desc
+                externalClass={'pt40'}
+                styleObj={styles.rightAlign}
+                desc={aboutMeDesc}
+              />
+            </div>
+            <div className="col-12 col-md-4 pt60">
+              <img alt="hehebot" src={laptopDark} />
+            </div>
+            <div className="col-12 col-md-5 pt60">
+              <img alt="hehebot" src={laptopLight} />
+              <TitleSecondary
+                externalClass={'pt20'}
+                isRegular="true"
+                secondaryTitle="A simple session based authentication and authorization web app"
+              />
+            </div>
+
+            <div className="flexCenter pt60">
+              <Button />
+            </div>
+          </div>
         </section>
       </section>
     </div>

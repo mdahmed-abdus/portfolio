@@ -1,3 +1,32 @@
+// /Image common class
+.img-wrap-main {
+  display: flex;
+  justify-content: center;
+  .warp-img {
+    width: 100%;
+    height: 373px;
+    object-fit: cover;
+    object-position: center;
+    &--circle {
+      @extend .warp-img;
+      width: 200px;
+      clip-path: circle(50%);
+    }
+  }
+}
+
+//Add your breakpoints and dimensions
+@media only screen and (max-width: 768px) {
+  .img-wrap-main {
+    .warp-img {
+      height: 300px;
+      &--circle {
+        width: 300px;
+      }
+    }
+  }
+}
+
 // Flex behaviour
 .displayFlex {
   display: flex;
@@ -24,6 +53,12 @@
 .mt80 {
   margin-top: 80px;
 }
+.pt20 {
+  padding-top: 20px;
+}
+.pt40 {
+  padding-top: 40px;
+}
 .pt60 {
   padding-top: 60px;
 }
@@ -35,6 +70,9 @@
 }
 .pt80 {
   padding-top: 80px;
+}
+.pb80 {
+  padding-bottom: 80px;
 }
 
 //Grid containers

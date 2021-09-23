@@ -5,7 +5,10 @@
   font-weight: normal;
   font-size: $font-36;
   line-height: 32px;
-  text-align: center;
+  // text-align: center;
+  &.is-itallic {
+    font-style: italic;
+  }
 }
 
 .title-secondary {
@@ -16,6 +19,11 @@
   letter-spacing: 6px;
   text-transform: uppercase;
   color: $primary;
+  &.regular-style {
+    text-transform: lowercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
 }
 
 .line {
