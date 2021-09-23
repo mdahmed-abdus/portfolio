@@ -75,6 +75,39 @@
   padding-bottom: 80px;
 }
 
+@media only screen and (max-width: 480px) {
+  .ml20 {
+    margin-left: 10px !important;
+  }
+  .mr20 {
+    margin-right: 10px !important;
+  }
+  .mt80 {
+    margin-top: 40px;
+  }
+  .pt20 {
+    padding-top: 10px;
+  }
+  .pt40 {
+    padding-top: 20px;
+  }
+  .pt60 {
+    padding-top: 30px;
+  }
+  .pb60 {
+    padding-bottom: 30px;
+  }
+  .pt90 {
+    padding-top: 45px;
+  }
+  .pt80 {
+    padding-top: 40px;
+  }
+  .pb80 {
+    padding-bottom: 40px;
+  }
+}
+
 //Grid containers
 .grid-main-container {
   margin-left: auto;
