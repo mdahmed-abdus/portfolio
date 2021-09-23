@@ -1,0 +1,13 @@
+@import '../../../scss/variables.scss';
+
+.footerStyle {
+  height: 162px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: #3a3124;
+}
