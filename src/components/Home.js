@@ -147,6 +147,28 @@ function Home(props) {
           </div>
         </section>
       </section>
+
+      {/* journey-section */}
+      <section className="grid-main-container ">
+        <section className="grid-container ">
+          <div className="row ">
+            <div className="col-12 col-md-6 ">
+              <TitleSecondary isLeftLine="true" secondaryTitle="my journey" />
+              <Title
+                externalClass={'pt90'}
+                styleObj={styles.centerAlign}
+                title="Get to know more about me"
+              />
+            </div>
+            <div className="col-12 col-md-6 ">
+              <Desc externalClass={'pt60'} desc={aboutMeDesc} />
+              <div className="flexCenter pt60">
+                <Button />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
