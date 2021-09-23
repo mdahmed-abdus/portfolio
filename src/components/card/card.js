@@ -5,8 +5,8 @@ function Card(props) {
   const cardTitle = props.cardTitle;
 
   return (
-    <div class="card flexVerticleCenter">
-      <div class="title-secondary">{cardTitle}</div>
+    <div className="card flexVerticleCenter">
+      <div className="title-secondary">{cardTitle}</div>
     </div>
   );
 }

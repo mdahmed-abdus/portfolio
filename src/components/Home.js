@@ -23,21 +23,21 @@ function Home(props) {
       {/* banner */}
 
       {/* intro-section */}
-      <section class="grid-main-container ">
-        <section class="grid-container ">
-          <div class="row ">
-            <div class="col-12 col-md-6 ">
-              <TitleSecondary showRightLine="false" secondaryTitle="about me" />
-              <div class="pt60">
+      <section className="grid-main-container ">
+        <section className="grid-container ">
+          <div className="row ">
+            <div className="col-12 col-md-6 ">
+              <TitleSecondary isLeftLine="true" secondaryTitle="about me" />
+              <div className="pt60">
                 <Desc desc={aboutMeDesc} />
               </div>
 
-              <div class="flexCenter pt60">
+              <div className="flexCenter pt60">
                 <Button />
               </div>
             </div>
-            <div class="col-12 col-md-6 ">
-              <div class="pt90">
+            <div className="col-12 col-md-6 ">
+              <div className="pt90">
                 <Title title={introTitle} />
               </div>
             </div>
@@ -46,18 +46,22 @@ function Home(props) {
       </section>
 
       {/* skills-section */}
-      <section class="darkBg mt80 pt80">
-        <section class="grid-main-container">
-          <section class="grid-container ">
-            <div class="row">
-              <div class="col-12">
-                <div class="flexCenter">
-                  <TitleSecondary secondaryTitle="my skills" />
+      <section className="darkBg mt80 pt80">
+        <section className="grid-main-container">
+          <section className="grid-container ">
+            <div className="row">
+              <div className="col-12">
+                <div className="flexCenter">
+                  <TitleSecondary
+                    isRightLine="true"
+                    isLeftLine="true"
+                    secondaryTitle="my skills"
+                  />
                 </div>
               </div>
 
               {cardList.map((card, i) => (
-                <div class="col-12 col-md-4 pt60">
+                <div className="col-12 col-md-4 pt60">
                   <Card key={i} cardTitle={card.cardTitle} />
                 </div>
               ))}
