@@ -170,6 +170,26 @@ function Home(props) {
           </section>
         </section>
       </section>
+
+      {/* contact section */}
+      <section className="grid-main-container pt80">
+        <section className="grid-container ">
+          <div className="row">
+            <div className="col-12">
+              <div className="flexCenter">
+                <TitleSecondary
+                  isRightLine="true"
+                  isLeftLine="true"
+                  secondaryTitle="connect"
+                />
+              </div>
+            </div>
+            <div className="flexCenter pt60">
+              <Button buttonText="submit" />
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
