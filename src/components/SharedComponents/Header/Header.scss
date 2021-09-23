@@ -1,0 +1,20 @@
+@import '../../../scss/variables.scss';
+@import '../Card/Card.scss';
+
+.header-style {
+  height: 70px;
+}
+
+.banner-img {
+  height: 664px;
+}
+.header-banner {
+  position: relative;
+}
+.glass {
+  @extend .card;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 0px;
+}

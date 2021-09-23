@@ -36,7 +36,7 @@ function Home(props) {
       {/* {console.log(STYLES)} */}
 
       {/* intro-section */}
-      <section className="grid-main-container ">
+      <section className="grid-main-container pt80">
         <section className="grid-container ">
           <div className="row ">
             {/* <svg>
