@@ -184,8 +184,21 @@ function Home(props) {
                 />
               </div>
             </div>
-            <div className="flexCenter pt60">
-              <Button buttonText="submit" />
+
+            <div className="form-container pt60 flexCenter">
+              <form className="form-main-style">
+                <label>
+                  <input type="text" placeholder="Enter Your Name" />
+                </label>
+
+                <label>
+                  <input type="email" placeholder="Enter Your Email Id" />
+                </label>
+                {/* <input type="submit" value="Submit" /> */}
+                <div className="flexCenter pt60">
+                  <Button buttonText="submit" />
+                </div>
+              </form>
             </div>
           </div>
         </section>
