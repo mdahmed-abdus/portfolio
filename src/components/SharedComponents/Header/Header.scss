@@ -72,6 +72,20 @@ a:-webkit-any-link {
   }
 }
 
+.main-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 144px;
+  // line-height: 0px;
+  // display: flex;
+  // align-items: center;
+  letter-spacing: 0.1em;
+  color: red;
+  position: absolute;
+  z-index: 2;
+}
+
 @media only screen and (max-width: 1200px) {
   .hamburgerLogo {
     display: block;

@@ -38,6 +38,7 @@ function Header(props) {
 
   return (
     <div className="header-banner">
+      {/* <div className="main-text">mohd ahmed</div> */}
       <div className="glass pb60">
         <div className="intro-section">
           <TitleSecondary
