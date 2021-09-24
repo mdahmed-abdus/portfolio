@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Header/Header.scss';
 import TitleSecondary from '../../SharedComponents/Title/TitleSecondary';
+import Icon from '../icon/icon';
 
 function Header(props) {
   //   let isItallic = props.isItallic;
@@ -40,13 +41,33 @@ function Header(props) {
     <div className="header-banner">
       {/* <div className="main-text">mohd ahmed</div> */}
       <div className="glass pb60">
+        <Icon
+          name="main-logo"
+          svgStyleClass="header-logo-style"
+          width="44px"
+          height="44px"
+        />
         <div className="intro-section">
           <TitleSecondary
             isRegular="true"
             externalClass={'pb40'}
             secondaryTitle={introText}
           />
-          <div className="logo">socials</div>
+          <div className="logo">
+            <Icon
+              name="linkdin"
+              svgStyleClass="mr20"
+              width="36px"
+              height="36px"
+            />
+            <Icon
+              name="github"
+              svgStyleClass="mr20"
+              width="36px"
+              height="36px"
+            />
+            <Icon name="facebook" width="36px" height="36px" />
+          </div>
         </div>
       </div>
       <header className="header-style ">
@@ -55,7 +76,12 @@ function Header(props) {
             className="hamburgerLogo pointer-cursor "
             onClick={showMobileHeader}
           >
-            hamburgerLogo
+            <Icon
+              name="hamburger"
+              svgStyleClass="m20"
+              width="36px"
+              height="36px"
+            />
           </div>
           <ul id="nav-list" className="displayFlex nav-list">
             {navList.map((nav, i) => (
