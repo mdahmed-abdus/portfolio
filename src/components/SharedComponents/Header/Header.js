@@ -30,13 +30,22 @@ function Header(props) {
     },
   ];
 
+  function showMobileHeader() {
+    document.querySelector('#nav-list').classList.toggle('mobile-nav-style');
+  }
+
   return (
     <div className="header-banner">
       <div className="glass"></div>
       <header className="header-style ">
         <nav className="navbar flexAlignCenter">
-          {/* <nav className="navbar flexAlignCenter"> */}
-          <ul className="displayFlex">
+          <div
+            className="hamburgerLogo pointer-cursor "
+            onClick={showMobileHeader}
+          >
+            hamburgerLogo
+          </div>
+          <ul id="nav-list" className="displayFlex nav-list">
             {navList.map((nav, i) => (
               <li key={i} className="li-style">
                 <a key={i + 1} className="nav-a" href="">
