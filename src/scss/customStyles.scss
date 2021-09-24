@@ -36,6 +36,14 @@ img {
   cursor: pointer;
 }
 
+.skillsBg {
+  background-image: url('../assets/images/mainLogoBg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 678px;
+}
+
 .form-container {
   .form-main-style {
     width: 60%;
