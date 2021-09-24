@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Header/Header.scss';
-import hehebot from '../../../assets/images/hehebot.jpg';
+import TitleSecondary from '../../SharedComponents/Title/TitleSecondary';
 
 function Header(props) {
   //   let isItallic = props.isItallic;
@@ -29,6 +29,8 @@ function Header(props) {
       link: 'about',
     },
   ];
+  let introText =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.';
 
   function showMobileHeader() {
     document.querySelector('#nav-list').classList.toggle('mobile-nav-style');
@@ -36,7 +38,16 @@ function Header(props) {
 
   return (
     <div className="header-banner">
-      <div className="glass"></div>
+      <div className="glass pb60">
+        <div className="intro-section">
+          <TitleSecondary
+            isRegular="true"
+            externalClass={'pb40'}
+            secondaryTitle={introText}
+          />
+          <div className="logo">socials</div>
+        </div>
+      </div>
       <header className="header-style ">
         <nav className="navbar flexAlignCenter">
           <div
@@ -57,9 +68,7 @@ function Header(props) {
           {/* </nav> */}
         </nav>
       </header>
-      <div className="banner-img img-wrap-main">
-        <img className="warp-img" alt="hehebot" src={hehebot} />
-      </div>
+      <div className="banner-img img-wrap-main"></div>
     </div>
   );
 }
