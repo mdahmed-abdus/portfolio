@@ -2,7 +2,31 @@
 @import '../Card/Card.scss';
 
 .header-style {
-  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  .navbar {
+    height: 70px;
+    justify-content: flex-end;
+  }
+}
+.li-style {
+  list-style-type: none;
+  padding-right: 60px;
+  a {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fbd784;
+  }
+}
+.li-style,
+.nav-a,
+a:-webkit-any-link {
+  text-decoration: none !important;
 }
 
 .banner-img {
@@ -14,7 +38,7 @@
 .glass {
   @extend .card;
   position: absolute;
-  width: 50%;
+  width: 44.6%;
   height: 100%;
   border-radius: 0px;
 }

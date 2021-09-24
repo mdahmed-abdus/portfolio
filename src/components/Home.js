@@ -33,14 +33,13 @@ function Home(props) {
   return (
     <div>
       {/* banner */}
-      {/* {console.log(STYLES)} */}
 
       {/* intro-section */}
       <section className="grid-main-container pt80">
         <section className="grid-container ">
           <div className="row ">
             {/* <svg>
-              <use href="../assets/svg/icons.svg#main-logo"></use>
+              <use xlinkHref="../assets/svg/icons.svg#main-logo"></use>
             </svg> */}
 
             <div className="col-12 col-md-6 ">

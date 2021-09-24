@@ -2,7 +2,7 @@
 
 .mainTitle {
   font-family: $font-secondary;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: $font-36;
   line-height: 32px;
   // text-align: center;
@@ -21,7 +21,7 @@
   color: $primary;
   &.regular-style {
     text-transform: lowercase;
-    font-weight: normal;
+    font-weight: lighter;
     letter-spacing: 2px;
   }
 }

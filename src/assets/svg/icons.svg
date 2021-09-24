@@ -1,8 +1,8 @@
-<svg version="1.1" xmlns="http://www.org/2000/svg" xmlns:xlink="http://www.org/1999/xlink" x="0px"
+<svg version="1.1" xmlns="http://www.org/2000/svg" xmlnsXlink="http://www.org/1999/xlink" x="0px"
 y="0px">
 <defs>
 
-<symbol id="main-logo" width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="main-logo" width="89" height="89" viewBox="0 0 89 89" fill="none">
 <path d="M5.34782 62.5422L1 56.95L5.30781 37.5907L9.61576 18.2314L27.0578 9.61576L44.5 1L61.9422 9.61576L79.3842 18.2314L83.6922 37.5907L88 56.95L75.9296 72.475L63.8594 88H44.5H25.1406L13.0704 72.475L5.34782 62.5422Z" stroke="#FBD784" stroke-miterlimit="3" stroke-linecap="square"/>
 <path d="M5.02783 62.2222L22.75 44.5L44.5 66.25L66.25 44.5L83.94 62.2222" stroke="#FBD784" stroke-miterlimit="3" stroke-linecap="square"/>
 <path d="M5.34782 62.5422L1 56.95L5.30781 37.5907L9.61576 18.2314L27.0578 9.61576L44.5 1L61.9422 9.61576L79.3842 18.2314L83.6922 37.5907L88 56.95L75.9296 72.475L63.8594 88H44.5H25.1406L13.0704 72.475L5.34782 62.5422Z" stroke="#FBD784" stroke-miterlimit="3" stroke-linecap="square"/>
