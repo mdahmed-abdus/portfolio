@@ -7,6 +7,8 @@ import Button from './SharedComponents/Button/Button';
 import hehebot from '../assets/images/hehebot.jpg';
 import laptopDark from '../assets/images/laptop-dark.png';
 import laptopLight from '../assets/images/laptop-light.jpg';
+import mainLogoBg from '../assets/images/mainLogoBg.png';
+import Icon from './SharedComponents/icon/icon';
 
 // import "../assets/images/hehebot"
 function Home(props) {
@@ -38,10 +40,6 @@ function Home(props) {
       <section className="grid-main-container pt80">
         <section className="grid-container ">
           <div className="row ">
-            {/* <svg>
-              <use xlinkHref="../assets/svg/icons.svg#main-logo"></use>
-            </svg> */}
-
             <div className="col-12 col-md-6 ">
               <TitleSecondary isLeftLine="true" secondaryTitle="about me" />
               <Desc externalClass={'pt60'} desc={aboutMeDesc} />
@@ -58,7 +56,7 @@ function Home(props) {
       </section>
 
       {/* skills-section */}
-      <section className="darkBg mt80 pt80 pb80">
+      <section className="darkBg skillsBg mt80 pt80 pb80">
         <section className="grid-main-container">
           <section className="grid-container ">
             <div className="row">
