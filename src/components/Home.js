@@ -7,8 +7,6 @@ import Button from './SharedComponents/Button/Button';
 import hehebot from '../assets/images/hehebot.jpg';
 import laptopDark from '../assets/images/laptop-dark.png';
 import laptopLight from '../assets/images/laptop-light.jpg';
-import mainLogoBg from '../assets/images/mainLogoBg.png';
-import Icon from './SharedComponents/icon/icon';
 
 // import "../assets/images/hehebot"
 function Home(props) {
@@ -16,12 +14,12 @@ function Home(props) {
   let aboutMeDesc =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
   const cardList = [
-    { cardTitle: 'python' },
-    { cardTitle: 'java' },
-    { cardTitle: 'nodejs' },
-    { cardTitle: 'python' },
-    { cardTitle: 'java' },
-    { cardTitle: 'nodejs' },
+    { svgId: 'javascript', cardTitle: 'javascript' },
+    { svgId: 'python', cardTitle: 'python' },
+    { svgId: 'java', cardTitle: 'java' },
+    { svgId: 'html', cardTitle: 'html' },
+    { svgId: 'node', cardTitle: 'node' },
+    { svgId: 'express', cardTitle: 'express' },
   ];
   let styles = {
     centerAlign: {
@@ -72,7 +70,7 @@ function Home(props) {
 
               {cardList.map((card, i) => (
                 <div className="col-12 col-md-4 pt60">
-                  <Card key={i} cardTitle={card.cardTitle} />
+                  <Card key={i} cardTitle={card.cardTitle} svgId={card.svgId} />
                 </div>
               ))}
             </div>
