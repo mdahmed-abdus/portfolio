@@ -135,13 +135,16 @@ h1 {
 }
 
 @media only screen and (max-width: 1200px) {
-  h1 {
-    font-size: 80px;
-  }
   .hamburgerLogo {
     display: block;
   }
   .nav-list {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 80px;
   }
 }
