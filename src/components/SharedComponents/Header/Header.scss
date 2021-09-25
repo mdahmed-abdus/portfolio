@@ -64,10 +64,6 @@ a:-webkit-any-link {
   width: 44.6%;
   height: 100%;
   border-radius: 0px;
-  // display: flex;
-  // align-items: end;
-  // justify-content: flex-end;
-  // padding-bottom: 60px;
   top: 0;
   left: 0;
 }
@@ -110,9 +106,6 @@ h1 {
   font-style: normal;
   font-weight: 500;
   font-size: 144px;
-  // line-height: 0px;
-  // display: flex;
-  // align-items: center;
   letter-spacing: 0.1em;
   color: red;
   position: absolute;
@@ -126,7 +119,6 @@ h1 {
   );
   backdrop-filter: blur(42px);
   color: #000;
-  /* the magic property */
   mix-blend-mode: screen;
   font-family: Inter;
   font-style: normal;

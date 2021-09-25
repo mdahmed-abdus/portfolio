@@ -47,19 +47,17 @@ function Home(props) {
 
   return (
     <div>
-      {/* banner */}
-
       {/* intro-section */}
       <section className="grid-main-container pt80">
         <section className="grid-container ">
           <div className="row ">
-            <div className="col-12 col-md-6 ">
+            <div className="col-12 col-md-6 sm-order2">
               <TitleSecondary isLeftLine="true" secondaryTitle="about me" />
               <Desc externalClass={'pt60'} desc={aboutMeDesc} />
             </div>
             <div className="col-12 col-md-6 ">
               <Title
-                externalClass={'pt90'}
+                externalClass={'pt90 sm-pt-0'}
                 styleObj={styles.centerAlign}
                 title={introTitle}
               />
@@ -107,48 +105,56 @@ function Home(props) {
               </div>
             </div>
 
-            <div className="col-12 col-md-7 pt60">
-              <div className="img-wrap-main">
-                <img className="warp-img" alt="hehebot" src={hehebot} />
+            <div className="row md-positon-relative">
+              <div className="col-12 col-md-7 pt60">
+                <div className="img-wrap-main">
+                  <img className="warp-img" alt="hehebot" src={hehebot} />
+                </div>
               </div>
-            </div>
-            <div className="col-12 col-md-5 pt60">
-              <Title isItallic="true" title={'HeheBot'} />
+              <div className="col-12 col-md-5 pt60 md-positon-absolute">
+                <Title isItallic="true" title={'HeheBot'} />
 
-              <TitleSecondary
-                isRegular="true"
-                externalClass={'pt20'}
-                secondaryTitle="A personalized discord bot"
-              />
-              <Desc externalClass={'pt40'} desc={aboutMeDesc} />
+                <TitleSecondary
+                  isRegular="true"
+                  externalClass={'pt20'}
+                  secondaryTitle="A personalized discord bot"
+                />
+                <Desc externalClass={'pt40'} desc={aboutMeDesc} />
+              </div>
             </div>
 
-            <div className="col-12 col-md-3 pt60">
-              <Title
-                styleObj={styles.rightAlign}
-                isItallic="true"
-                title={'Simple Auth'}
-              />
-              <Desc
-                externalClass={'pt40'}
-                styleObj={styles.rightAlign}
-                desc={aboutMeDesc}
-              />
-            </div>
-            <div className="col-12 col-md-4 pt60">
-              <div className="img-wrap-main">
-                <img className="warp-img" alt="laptopDark" src={laptopDark} />
+            <div className="row md-positon-relative">
+              <div className="col-12 col-md-3 pt40 md-positon-absolute md-text-left">
+                <Title
+                  styleObj={styles.rightAlign}
+                  isItallic="true"
+                  title={'Simple Auth'}
+                />
+                <Desc
+                  externalClass={'pt40'}
+                  styleObj={styles.rightAlign}
+                  desc={aboutMeDesc}
+                />
               </div>
-            </div>
-            <div className="col-12 col-md-5 pt60">
-              <div className="img-wrap-main">
-                <img className="warp-img" alt="laptopLight" src={laptopLight} />
+              <div className="col-12 col-md-4 pt40">
+                <div className="img-wrap-main">
+                  <img className="warp-img" alt="laptopDark" src={laptopDark} />
+                </div>
               </div>
-              <TitleSecondary
-                externalClass={'pt20'}
-                isRegular="true"
-                secondaryTitle="A simple session based authentication and authorization web app"
-              />
+              <div className="col-12 col-md-5 pt40 md-positon-relative">
+                <div className="img-wrap-main">
+                  <img
+                    className="warp-img"
+                    alt="laptopLight"
+                    src={laptopLight}
+                  />
+                </div>
+                <TitleSecondary
+                  externalClass={'pt20 md-positon-absolute'}
+                  isRegular="true"
+                  secondaryTitle="A simple session based authentication and authorization web app"
+                />
+              </div>
             </div>
 
             <div className="flexCenter pt60">
@@ -180,11 +186,6 @@ function Home(props) {
                     />
                   );
                 })}
-                {/* <Roadmap
-                  roadmapTitle="Internship at Capriconics Infotech  company LLp"
-                  roadmapTileLine="Jun 2022 - present"
-                  roadmapTileDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-                /> */}
               </div>
               <div className="col-12 col-md-6 ">
                 <Desc externalClass={'pt60'} desc={aboutMeDesc} />

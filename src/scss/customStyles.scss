@@ -79,3 +79,10 @@ img {
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .sm-order2 {
+    order: 2;
+    padding-top: 20px;
+  }
+}
