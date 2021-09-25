@@ -7,6 +7,7 @@ import Button from './SharedComponents/Button/Button';
 import hehebot from '../assets/images/hehebot.jpg';
 import laptopDark from '../assets/images/laptop-dark.png';
 import laptopLight from '../assets/images/laptop-light.jpg';
+import Roadmap from './SharedComponents/Roadmap/Roadmap';
 
 // import "../assets/images/hehebot"
 function Home(props) {
@@ -151,9 +152,10 @@ function Home(props) {
               <div className="col-12 col-md-6 ">
                 <TitleSecondary isLeftLine="true" secondaryTitle="my journey" />
                 <Title
-                  externalClass={'pt40'}
+                  externalClass={'pt40 pb60'}
                   title="Get to know more about me"
                 />
+                <Roadmap />
               </div>
               <div className="col-12 col-md-6 ">
                 <Desc externalClass={'pt60'} desc={aboutMeDesc} />

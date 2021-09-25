@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.scss';
-import Icon from '../icon/icon';
+import Icon from '../Icon/Icon';
 
 function Card(props) {
   const cardTitle = props.cardTitle;
