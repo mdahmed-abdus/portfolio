@@ -7,7 +7,7 @@ function Card(props) {
   const svgId = props.svgId;
 
   return (
-    <div className="card flexVerticleCenter">
+    <div className="card flexVerticleCenter border-gradient border-gradient-purple">
       <Icon name={svgId} svgStyleClass="mr20" width="36px" height="36px" />
       <div className="title-secondary">{cardTitle}</div>
     </div>

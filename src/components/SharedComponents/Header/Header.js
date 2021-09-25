@@ -39,37 +39,6 @@ function Header(props) {
 
   return (
     <div className="header-banner">
-      {/* <div className="main-text">mohd ahmed</div> */}
-      <div className="glass pb60">
-        <Icon
-          name="main-logo"
-          svgStyleClass="header-logo-style"
-          width="44px"
-          height="44px"
-        />
-        <div className="intro-section">
-          <TitleSecondary
-            isRegular="true"
-            externalClass={'pb40'}
-            secondaryTitle={introText}
-          />
-          <div className="logo">
-            <Icon
-              name="linkdin"
-              svgStyleClass="mr20"
-              width="36px"
-              height="36px"
-            />
-            <Icon
-              name="github"
-              svgStyleClass="mr20"
-              width="36px"
-              height="36px"
-            />
-            <Icon name="facebook" width="36px" height="36px" />
-          </div>
-        </div>
-      </div>
       <header className="header-style ">
         <nav className="navbar flexAlignCenter">
           <div
@@ -95,7 +64,41 @@ function Header(props) {
           {/* </nav> */}
         </nav>
       </header>
-      <div className="banner-img img-wrap-main"></div>
+      <div className="banner-img">
+        <Icon
+          name="main-logo"
+          svgStyleClass="header-logo-style"
+          width="44px"
+          height="44px"
+        />
+        <div className="glass transparent-text">
+          <h1>Mohd</h1>
+        </div>
+        <div className="intro-section">
+          <TitleSecondary
+            isRegular="true"
+            externalClass={'pb40'}
+            secondaryTitle={introText}
+          />
+          <div className="logo">
+            <Icon
+              name="linkdin"
+              svgStyleClass="mr20"
+              width="36px"
+              height="36px"
+            />
+            <Icon
+              name="github"
+              svgStyleClass="mr20"
+              width="36px"
+              height="36px"
+            />
+            <Icon name="facebook" width="36px" height="36px" />
+          </div>
+
+          <h1 class="lastNameStyle">Ahmed</h1>
+        </div>
+      </div>
     </div>
   );
 }
