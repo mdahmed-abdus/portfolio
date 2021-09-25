@@ -28,7 +28,7 @@ function Roadmap(props) {
         externalClass={'pt20 pl20 roadmap-date'}
         secondaryTitle={roadmapTileLine}
       />
-      <Desc externalClass={'pt40 pl20'} desc={roadmapTileDesc} />
+      <Desc externalClass={'pt20 pl20 pb80'} desc={roadmapTileDesc} />
     </div>
   );
 }

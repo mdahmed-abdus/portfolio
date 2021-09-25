@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Header/Header.scss';
 import TitleSecondary from '../../SharedComponents/Title/TitleSecondary';
-import Icon from '../icon/icon';
+import Icon from '../Icon/Icon';
 
 function Header(props) {
   //   let isItallic = props.isItallic;

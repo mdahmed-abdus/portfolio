@@ -22,6 +22,20 @@ function Home(props) {
     { svgId: 'node', cardTitle: 'node' },
     { svgId: 'express', cardTitle: 'express' },
   ];
+
+  const journeyList = [
+    {
+      title: 'Internship at Capriconics Infotech  company LLp',
+      timeline: 'Jun 2022 - present',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+    },
+    {
+      title: 'Be in computer science from mumbai university',
+      timeline: 'Jun 2018 - may 2022',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+    },
+  ];
+
   let styles = {
     centerAlign: {
       textAlign: 'center',
@@ -155,11 +169,22 @@ function Home(props) {
                   externalClass={'pt40 pb60'}
                   title="Get to know more about me"
                 />
-                <Roadmap
+
+                {journeyList.map((journey, i) => {
+                  return (
+                    <Roadmap
+                      key={i}
+                      roadmapTitle={journey.title}
+                      roadmapTileLine={journey.timeline}
+                      roadmapTileDesc={journey.desc}
+                    />
+                  );
+                })}
+                {/* <Roadmap
                   roadmapTitle="Internship at Capriconics Infotech  company LLp"
                   roadmapTileLine="Jun 2022 - present"
                   roadmapTileDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-                />
+                /> */}
               </div>
               <div className="col-12 col-md-6 ">
                 <Desc externalClass={'pt60'} desc={aboutMeDesc} />
