@@ -93,7 +93,7 @@ function Header(props) {
               width="36px"
               height="36px"
             />
-            <Icon name="facebook" width="36px" height="36px" />
+            <Icon name="mail" width="36px" height="36px" />
           </div>
 
           <h1 class="lastNameStyle">Ahmed</h1>
